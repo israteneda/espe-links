@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Espe Links</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        html, body {
+            font-family: 'Lato', 'Open Sans', 'Arial', 'Helvetica', 'Verdana';
+            font-size: 14px;
+            margin: 0;
+            min-height:  150px;
+            padding:  0;
+            width: 350px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 400px;
+            color: #5cb860;
+        }
+
+        a:link, a:visited {
+            color: rgba(0, 0, 0, .6);
+            outline: 0;
+            text-decoration: none;
+        }
+
+        img {
+            width: 30px;
+        }
+
+        .modal-header {
+            text-align: center;
+        }
+
+        .modal-content {
+            text-align: center;
+            padding: 0 22px;
+        }
+
+        .modal-icons {
+            height:  50px;
+            width: 100%;
+        }
+
+        .logo-icon {
+            vertical-align: text-bottom;
+            margin-right: 12px;
+        }
+
+        .version {
+            padding-left: 3px;
+            color: rgb(0,0,0, .25);
+            font-size: 18px;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 22px;
+        }
+
+        .flex {
+            opacity: 1;
+            transition: opacity 0.2s ease-in-out;
+            width: 120px;
+        }
+
+        .flex + .flex {
+            margin: 0 10px;
+        }
+
+        .flex:hover {
+            opacity: 0.5;
+        }
+
+        .flex .fa {
+            font-size: 30px;
+        }
+
+        footer,
+        footer a {
+            color: rgba(0, 0, 0, .4);
+            text-align: center;
+        font-size: 11px;
+        }
+
+        footer a:hover {
+            font-weight: bold;
+            color: rgba(0,100, 255, .5);
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="modal-header">
+        <h1 class="logo">
+            <img src="images/espe-logo.png" alt="Espe Links" class="logo-icon"> Espe Links
+        </h1>
+    </div>
+    <div class="modal-content">
+        <p>Fácil acceso a links de interés.</p>
+    </div>
+    <div class="modal-icons">
+        <div class="flex-container">
+            <div class="flex">
+                <a href="https://miespe.espe.edu.ec/cp/home/displaylogin" target="_blank">
+                    <div class="fa fa-globe" title="Mi Espe"></div>
+                </a>
+            </div>
+            <div class="flex">
+                <a href="http://webltga.espe.edu.ec/moodle2/login/index.php" target="_blank">
+                    <i class="fa fa-graduation-cap" title="Aula Virtual Moodle"></i>
+                </a>
+            </div>
+            <div class="flex">
+                <a href="https://pentaho.espe.edu.ec/pentaho/api/repos/%3Apublic%3AReportes%3AMatriculas%3APZSDATOSID_espe.prpt/viewer?userid=consulta&password=consulta" target="_blank">
+                    <i class="fa fa-id-card" title="Consulta ID"></i>
+                </a>
+            </div>
+            <div class="flex">
+                <a href="https://pentaho.espe.edu.ec/pentaho/api/repos/%3Apublic%3AReportes%3AMatriculas%3ARZSP0002_BusquedaNRCES.prpt/viewer?userid=consulta&password=consulta" target="_blank">
+                    <i class="fa fa-search" title="Consulta NRCS"></i>
+                </a>
+            </div>
+            <div class="flex">
+                <a href="https://pentaho.espe.edu.ec/pentaho/api/repos/%3Apublic%3AReportes%3AMatriculas%3ARZSM0002_Fecha_Matriculacion.prpt/viewer?userid=consulta&password=consulta" target="_blank">
+                    <i class="fa fa-calendar" title="Consulta Fecha Matrícula"></i>
+                </a>
+            </div>
+            <div class="flex">
+                <a href="https://pentaho.espe.edu.ec/pentaho/api/repos/%3Apublic%3AReportes%3AEstudiantes%3APZSE0005_Listado.prpt/viewer?ts=1574859123771" target="_blank">
+                    <i class="fa fa-users" title="Consulta Compañeros de Clase"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>by <a href="https://israteneda.com" target="_blank">Isra Teneda</a></p>
+    </footer>
+    <script src="popup.js"></script>
+</body>
+</html>
